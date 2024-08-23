@@ -2,18 +2,18 @@ const prompt = require('prompt-sync')()
 // 1. Escreva um programa que recebe um número inteiro e verifica se ele é par ou ímpar
 // utilizando uma estrutura de controle if.
 
-// const number = Number(prompt('Qual numéro deseja verificar:  '))
-// function isEven(number) {
-//     return (number % 2 === 0)
+const number = Number(prompt('Qual numéro deseja verificar: '))
+function isEven(number) {
+    return (number % 2 === 0)
 
-// }
-// if(isEven(number)){
-//     console.log("O numero é par");
+}
+if(isEven(number)){
+    console.log("O numero é par");
 
-// } else{
-//     console.log("O numero é impar");
+} else{
+    console.log("O numero é impar");
 
-// }
+}
 
 
 
