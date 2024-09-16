@@ -263,7 +263,7 @@ const prompt = require('prompt-sync')()
 // let array = [filme1, filme2]
 // let arrayTitulo = []
 // array.forEach(element => {
-    
+
 //     arrayTitulo.push(element.titulo)
 // });
 // console.log(arrayTitulo);
@@ -274,3 +274,111 @@ const prompt = require('prompt-sync')()
 // ○ Objetivo: Crie um array de objetos clientes, cada um com propriedades
 // nome, idade, e cidade. Use forEach para contar quantos clientes têm mais
 // de 30 anos.
+
+// class cliente {
+//     constructor(nome, idade, cidade) {
+//         this.nome = nome
+//         this.idade = idade
+//         this.cidade = cidade
+//     }
+// }
+// let cliente1 = new cliente('Marcos', 25, 'Salvador')
+// let cliente2 = new cliente('Plinio',35,'Salvador')
+// let cliente3 = new cliente('Gerson',60,'Feira de Santana')
+// let array = [cliente1,cliente2,cliente3]
+// let count = 0
+// array.forEach(element => {
+//     if(element.idade > 30){
+//         count++
+//     }
+
+
+// });
+// console.log(count);
+
+// 10. Criando Relatórios com Objetos e Arrays
+// ○ Objetivo: Crie um array de objetos vendas, onde cada objeto tem produto,
+// quantidade e valor. Use forEach para calcular o valor total de vendas de
+// todos os produtos.
+
+// class vendas {
+//     constructor(produto, quantidade, valor) {
+//         this.produto = produto
+//         this.quantidade = quantidade
+//         this.valor = valor
+//     }
+
+// }
+
+// let vendas1 = new vendas('Arroz', 8, 5.00)
+// let vendas2 = new vendas('Feijão', 10, 4.50)
+// let vendas3 = new vendas('Macarrão', 15, 4.00)
+// let vendas4 = new vendas('Farinha', 20, 3.00)
+// let array = [vendas1, vendas2, vendas3, vendas4]
+// let valorTotal = 0
+// array.forEach(element => {
+//     valorTotal = element.quantidade * element.valor + valorTotal
+// });
+// console.log(valorTotal);
+
+
+
+// 11. Agrupando Elementos com forEach
+// ○ Objetivo: Crie um array de objetos pedidos, onde cada pedido tem
+// cliente, produto, e quantidade. Use forEach para criar um objeto que
+// agrupa a quantidade total de produtos por cliente.
+
+
+// class pedidos {
+//     constructor(cliente, produto, quantidade) {
+//         this.cliente = cliente
+//         this.produto = produto
+//         this.quantidade = quantidade
+
+
+//     }
+// }
+
+// let pedido1 = new pedidos('Augusto', 'Agua', 5)
+// let pedido2 = new pedidos('Augusto', 'Cebola', 10)
+// let pedido3 = new pedidos('Maria', 'Agua', 500)
+// const array = [pedido1, pedido2, pedido3]
+// const totalPorCliente ={}
+// array.forEach(element => {
+//     const {cliente,quantidade} = element
+//     if(totalPorCliente[cliente]){
+//         totalPorCliente[cliente] +=quantidade
+//     } else{
+//        totalPorCliente[cliente] = quantidade
+//     }
+// });
+// console.log(totalPorCliente);
+
+
+
+// 12. Atualizando um Array de Objetos
+// ○ Objetivo: Crie um array de objetos estoque, onde cada objeto tem
+// produto, quantidade e minimo. Use forEach para atualizar a quantidade
+// dos produtos que estão abaixo do mínimo, duplicando suas quantidades.
+
+// class estoque {
+//     constructor(produto, quantidade, minimo) {
+//         this.produto = produto
+//         this.quantidade = quantidade
+//         this.minimo = minimo
+//     }
+
+// }
+
+// let estoque1 = new estoque('Arroz', 10, 5)
+// let estoque2 = new estoque('Macarrão', 10, 15)
+// let estoque3 = new estoque('Feijão', 11, 20)
+// let estoque4 = new estoque('Suco', 20, 5)
+// let array = [estoque1, estoque2, estoque3, estoque4]
+// array.forEach(element => {
+//     if (element.quantidade < element.minimo) {
+//         element.quantidade = element.quantidade * 2
+//     }
+//     console.log(element);
+    
+// });
