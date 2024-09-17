@@ -380,5 +380,70 @@ const prompt = require('prompt-sync')()
 //         element.quantidade = element.quantidade * 2
 //     }
 //     console.log(element);
-    
+
 // });
+
+// 13. Implementando um Carrinho de Compras
+// ○ Objetivo: Crie um objeto carrinho com uma propriedade itens, que é um
+// array de objetos. Cada objeto dentro de itens deve representar um
+// produto no carrinho, com nome, quantidade, e precoUnitario. Use forEach
+// para calcular o valor total do carrinho.
+
+// class carrinhoDeCompra {
+//     constructor() {
+//         this.itens = []
+//     }
+// }
+// class produto {
+//     constructor(nome, quantidade, precoUnitario) {
+//         this.nome = nome
+//         this.quantidade = quantidade
+//         this.precoUnitario = precoUnitario
+//     }
+// }
+
+// let shopcart = new carrinhoDeCompra()
+// let item1 = new produto('Arroz', 5, 5.80)
+// let item2 = new produto('Macarrão', 20, 4.20)
+// let item3 = new produto('Agua', 10, 3.15)
+// shopcart.itens.push(item1, item2, item3)
+// let valorTotal = null
+// shopcart.itens.forEach(element => {
+//     valorTotal += element.quantidade * element.precoUnitario
+
+
+// });
+// console.log(Number(valorTotal).toFixed(2));
+
+
+// 14. Manipulando Objetos Complexos
+// ○ Objetivo: Crie um objeto empresa com uma propriedade departamentos,
+// que é um array de objetos. Cada departamento tem um nome e uma lista
+// de funcionarios. Use for in e for of para iterar sobre os departamentos
+// e seus funcionários, exibindo o nome de cada funcionário junto com o
+// departamento ao qual pertence.
+
+// class empresa {
+//     constructor() {
+//         this.departamentos = []
+//     }
+// }
+// class departamanto {
+//     constructor(nome) {
+//         this.nome = nome
+//         this.listaFuncionario = []
+//     }
+
+// }
+// let empresa1 = new empresa()
+// let financeiro = new departamanto('Financeiro')
+// let ti = new departamanto('T.I')
+// empresa1.departamentos.push(financeiro, ti)
+// financeiro.listaFuncionario.push('Gerson', 'Maria', 'Carlos')
+// ti.listaFuncionario.push('Roberta', 'Fernanda', 'Ruth')
+// console.log(empresa1.departamentos);
+
+
+// for (const chave in empresa1.departamentos) {
+//     console.log(chave);
+// }
